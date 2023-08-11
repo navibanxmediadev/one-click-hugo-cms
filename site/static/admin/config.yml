@@ -103,3 +103,22 @@ collections: # A list of collections the CMS should be able to edit
                 name: images
                 widget: list
                 field: { label: Image, name: image, widget: image }
+  - name: "lsting_details"
+    label: "Listing Details"
+    files:
+      - file: "site/data/listing.json"
+        label: Listing Details
+        name: listing-details
+        fields:
+          - {label: Street Address, name: street-address, widget: string}
+          - {label: City, name: city, widget: string}
+          - {label: State, name: state, widget: string}
+          - {label: Zip Code, name: postal-code, widget: string}
+          - {label: Price, name: price, widget: string}
+          - {label: Home Type, name: type, widget: string}
+          - {label: Room Count, name: room-count, widget: string}
+          - {label: Bath Count, name: bath-count, widget: string}
+          - {label: Living Space Area, name: sqft, widget: string}
+          - {label: Lot Area, name: lot-sqft, widget: string}
+          - {label: Year Built, name: year-built, widget: string}
+          - {label: Description, name: description, widget: markdown}
